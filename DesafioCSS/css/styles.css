@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --color-red: #F03C42;
+    --color-white: #FFFFFF;
+    --color-blue: #222374;
+    --color-black: #000000;
+    --color-ligth-gray: #CCCCCC;
+
+}
+
+* {
+    font-family: 'Open Sans';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+  color: unset;
+  text-decoration: none;
+}
+
+header {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+nav h1 {
+    font-size: 18px;
+}
+
+section {
+    padding: 20px;
+}
+
+#gymspaces {
+    background-color: var(--color-blue);
+}
+
+#gymmodalities {
+    background-color: var(--color-white);
+}
+
+#gymspaces h2{
+    color: var(--color-white);
+}
+
+#gymmodalities h2 {
+    color: var(--color-red);
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+}
+
+.social-container img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.gymspaces-card {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: var(--color-ligth-gray);
+    color: var(--color-black);
+}
+
+.card h3 {
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.gymmodalities-card {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: 14px;
+    padding: 60px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

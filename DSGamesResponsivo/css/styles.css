@@ -1,0 +1,394 @@
+/*elements*/
+
+:root {
+
+    --color-ligth-green: #38AF90;
+    --color-white: #FFFFFF;
+    --color-dark-gray: #797979;
+    --color-ligth-gray: #f0f0f0b7;
+    --color-ligth-red: #DD7E92;
+    --color-carbon: #383838;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/*classes, ids*/
+
+.nav-container {
+    background-color: var(--color-ligth-green);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.nav-main {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.nav-main a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.menu-items {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    align-items: center;
+    display: none;
+    padding: 2px;
+}
+
+.menu-items li {
+    margin: 15px 10px 10px 10px;
+    font-size: 14px;
+}
+
+.profile-avatar {
+    width: 62px;
+    height: 62px;
+    margin-right: 10px;
+}
+
+.menu-profileavatar {
+    display: flex;
+}
+
+.nav-brand {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.news-container-title {
+    text-align: center;
+    color: var(--color-dark-gray);
+    font-size: 24px;
+    font-weight: 700;
+    padding: 2px;
+}
+
+.news-card {
+    background-color: var(--color-ligth-gray);
+    border-radius: 8px;
+    margin: 8px 10px 28px 10px;
+}
+
+.news-individual-title {
+    color: var(--color-ligth-green);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.news-individual-subtitle {
+    color: var(--color-dark-gray);
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 12px;
+    text-decoration: underline var(--color-ligth-green);
+}
+
+.news-individual-data {
+    color: var(--color-ligth-green);
+    font-size: 10px;
+    font-weight: 400;
+    margin-left: 12px;
+}
+
+.news-individual-text {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--color-dark-gray);
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.news-individual-readmore {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-ligth-red);
+    margin-left: 12px;
+}
+
+.news-button-loadmore {
+    width: 244px;
+    height: 67px;
+    text-align: center;
+    color: var(--color-white);
+    margin-top: 28px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--color-ligth-red);
+    border-radius: 8px;
+    border-style: none;
+}
+
+.news-button-position {
+    display: flex;
+    justify-content: center;
+    margin: 28px 38px 40px 38px;
+}
+
+.games-container-title {
+    color: var(--color-ligth-green);
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    width: 75px;
+}
+
+.games-section {
+    width: 100%;
+    max-width: 960px;
+}
+
+.games-container {
+    background-color: var(--color-ligth-gray);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.games-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 30px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: 300px;
+    height: 326px;
+    justify-content: center;
+    margin: 28px 10px 28px 10px;
+}
+
+.games-card-img {
+    width: 300px;
+    height: 168.54px;
+    border-radius: 8px;
+}
+
+.games-card-details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.games-card-title {
+    color: var(--color-dark-gray);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.games-card-producer {
+    font-size: 12px;
+}
+
+.games-card-producer span {
+    color: var(--color-ligth-green);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.games-card-rating {
+    color: var(--color-ligth-green);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.signup-container {
+    margin: 16px 8px 40px 12px;
+}
+
+
+.signup-container-title {
+    color: var(--color-dark-gray);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 40px 0 16px 0;
+}
+
+.signup-form {
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-ligth-gray);
+    border-radius: 8px;
+    color: var(--color-dark-gray);
+}
+
+.signup-name {
+    margin: 52px 12px 20px 8px;
+    padding: 0;
+    height: 50px;
+    border: 1px solid var(--color-dark-gray);
+    border-radius: 4px;
+}
+
+.signup-email {
+    margin: 0 12px 20px 8px;
+    padding: 0;
+    height: 50px;
+    border: 1px solid var(--color-dark-gray);
+    border-radius: 4px;
+}
+
+.plataform-question {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 0 0 8px;
+}
+
+.plataform-buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+}
+
+.newsletter {
+    display: flex;
+    margin: 0 0 0 8px;
+}
+
+.btn-enviar {
+    justify-content: center;
+    display: flex;
+    background-color: var(--color-ligth-red);
+    color: var(--color-white);
+    border-radius: 8px;
+    width: 244px;
+    height: 67px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 45px;
+}
+
+.btn-limpar {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-ligth-red);
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 244px;
+    height: 67px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: var(--color-ligth-red);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    height: 302px;
+    text-align: center;
+    background-color: var(--color-carbon);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+    justify-content: space-around;
+}
+
+@media(min-width: 768px) {
+    .nav-brand {
+        font-size: 24px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu-items {
+        display: flex;
+    }
+
+    .profile-avatar {
+        margin: 0 auto;
+        width: 62px;
+        height: 62px;
+    }
+
+    .menu-profileavatar {
+        display: flex;
+        margin: 0px;
+    }
+
+    .news-container-title {
+        font-size: 36px;
+    }
+
+    .news-individual-title {
+        font-size: 24px;
+    }
+
+    .news-individual-subtitle {
+        font-size: 16px;
+    }
+
+    .games-container-title {
+        font-size: 36px;
+    }
+
+    .games-card-container {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .signup-container-title {
+        font-size: 36px;
+    }
+
+    .btn-enviar {
+        margin: 0 auto;
+        margin-right: 26px;
+        padding: 0;
+    }
+
+    .btn-limpar {
+        margin: 0 auto;
+        margin-left: 26px;
+    }
+
+    .buttons-container {
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+
+
+}
